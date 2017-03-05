@@ -28,6 +28,7 @@ static NSString *ID=@"loopViewCell";
     if(self=[super init]){
     //创建集合视图以及frame
     UICollectionView *collectionView=[[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:[[ZYLoopViewLayout alloc]init]];
+        NSLog(@"测试ZYLoopview 31行");
     //注册集合视图单元格
     [collectionView registerClass:[ZYLoopViewCell class] forCellWithReuseIdentifier:ID];
     collectionView.delegate=self;
